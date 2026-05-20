@@ -1,0 +1,330 @@
+{
+  "name": "genext",
+  "displayName": "GeNext: AI-Powered Next.js & React TypeScript Helper",
+  "description": "Next generation development toolkit with AI assistance, code generators, cloud services, and testing suite for Next.js & React",
+  "version": "1.0.0",
+  "publisher": "genext",
+  "icon": "media/icon.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/genext/vscode-extension"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "Snippets",
+    "Programming Languages",
+    "Testing"
+  ],
+  "keywords": [
+    "nextjs",
+    "react",
+    "typescript",
+    "ai",
+    "code-generator",
+    "azure",
+    "aws",
+    "tailwind",
+    "styled-components",
+    "testing"
+  ],
+  "activationEvents": [
+    "onCommand:genext.showDashboard",
+    "onCommand:genext.createComponent",
+    "onCommand:genext.createApiRoute",
+    "onCommand:genext.createHook",
+    "onCommand:genext.createUtility",
+    "onCommand:genext.createFilter",
+    "onCommand:genext.createList",
+    "onCommand:genext.createDataFetcher",
+    "onCommand:genext.createDynamicRoute",
+    "onCommand:genext.analyzeCode",
+    "onCommand:genext.generateDocs",
+    "onCommand:genext.findBugs",
+    "onCommand:genext.explainCode",
+    "onCommand:genext.refactorCode",
+    "onCommand:genext.generateTests",
+    "onCommand:genext.createAzureFunction",
+    "onCommand:genext.createAWSLambda",
+    "onCommand:genext.initProject"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "genext.showDashboard",
+        "title": "🎯 GeNext: Show Dashboard",
+        "category": "GeNext"
+      },
+      {
+        "command": "genext.createComponent",
+        "title": "⚛️ GeNext: Create React Component",
+        "category": "GeNext"
+      },
+      {
+        "command": "genext.createApiRoute",
+        "title": "🌐 GeNext: Create API Route",
+        "category": "GeNext"
+      },
+      {
+        "command": "genext.createHook",
+        "title": "🎣 GeNext: Create Custom Hook",
+        "category": "GeNext"
+      },
+      {
+        "command": "genext.createUtility",
+        "title": "🛠️ GeNext: Create Utility Function",
+        "category": "GeNext"
+      },
+      {
+        "command": "genext.createFilter",
+        "title": "🔍 GeNext: Create Filter Component",
+        "category": "GeNext"
+      },
+      {
+        "command": "genext.createList",
+        "title": "📋 GeNext: Create List Component",
+        "category": "GeNext"
+      },
+      {
+        "command": "genext.createDataFetcher",
+        "title": "🌐 GeNext: Create Data Fetching Component",
+        "category": "GeNext"
+      },
+      {
+        "command": "genext.createDynamicRoute",
+        "title": "🛣️ GeNext: Create Dynamic Route",
+        "category": "GeNext"
+      },
+      {
+        "command": "genext.analyzeCode",
+        "title": "🧠 GeNext: Analyze Code with AI",
+        "category": "GeNext"
+      },
+      {
+        "command": "genext.generateDocs",
+        "title": "📝 GeNext: Generate Documentation",
+        "category": "GeNext"
+      },
+      {
+        "command": "genext.findBugs",
+        "title": "🐛 GeNext: Find Bugs & Issues",
+        "category": "GeNext"
+      },
+      {
+        "command": "genext.explainCode",
+        "title": "💡 GeNext: Explain Selected Code",
+        "category": "GeNext"
+      },
+      {
+        "command": "genext.refactorCode",
+        "title": "🔧 GeNext: Refactor Code",
+        "category": "GeNext"
+      },
+      {
+        "command": "genext.generateTests",
+        "title": "🧪 GeNext: Generate Unit Tests",
+        "category": "GeNext"
+      },
+      {
+        "command": "genext.createAzureFunction",
+        "title": "☁️ GeNext: Create Azure Function",
+        "category": "GeNext"
+      },
+      {
+        "command": "genext.createAWSLambda",
+        "title": "☁️ GeNext: Create AWS Lambda",
+        "category": "GeNext"
+      },
+      {
+        "command": "genext.initProject",
+        "title": "🏗️ GeNext: Initialize New Project",
+        "category": "GeNext"
+      },
+      {
+        "command": "genext.openAIChat",
+        "title": "💬 GeNext: Open AI Chat",
+        "category": "GeNext"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "when": "explorerResourceIsFolder",
+          "command": "genext.createComponent",
+          "group": "genext@1"
+        },
+        {
+          "when": "explorerResourceIsFolder",
+          "command": "genext.createApiRoute",
+          "group": "genext@2"
+        },
+        {
+          "when": "explorerResourceIsFolder",
+          "command": "genext.createHook",
+          "group": "genext@3"
+        },
+        {
+          "when": "explorerResourceIsFolder",
+          "command": "genext.createUtility",
+          "group": "genext@4"
+        },
+        {
+          "when": "explorerResourceIsFolder",
+          "command": "genext.createFilter",
+          "group": "genext@5"
+        },
+        {
+          "when": "explorerResourceIsFolder",
+          "command": "genext.createList",
+          "group": "genext@6"
+        },
+        {
+          "when": "explorerResourceIsFolder",
+          "command": "genext.createDataFetcher",
+          "group": "genext@7"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "genext.analyzeCode",
+          "group": "genext@1"
+        },
+        {
+          "command": "genext.generateDocs",
+          "group": "genext@2"
+        },
+        {
+          "command": "genext.explainCode",
+          "group": "genext@3"
+        },
+        {
+          "command": "genext.refactorCode",
+          "group": "genext@4"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "genext.showDashboard",
+        "key": "ctrl+shift+n",
+        "mac": "cmd+shift+n"
+      },
+      {
+        "command": "genext.createComponent",
+        "key": "ctrl+shift+c",
+        "mac": "cmd+shift+c"
+      },
+      {
+        "command": "genext.createApiRoute",
+        "key": "ctrl+shift+a",
+        "mac": "cmd+shift+a"
+      },
+      {
+        "command": "genext.createHook",
+        "key": "ctrl+shift+h",
+        "mac": "cmd+shift+h"
+      },
+      {
+        "command": "genext.analyzeCode",
+        "key": "ctrl+shift+i",
+        "mac": "cmd+shift+i"
+      },
+      {
+        "command": "genext.generateDocs",
+        "key": "ctrl+shift+d",
+        "mac": "cmd+shift+d"
+      },
+      {
+        "command": "genext.explainCode",
+        "key": "ctrl+shift+e",
+        "mac": "cmd+shift+e"
+      }
+    ],
+    "configuration": {
+      "title": "GeNext",
+      "properties": {
+        "genext.deepseekApiKey": {
+          "type": "string",
+          "default": "",
+          "description": "DeepSeek API key for AI features (get from platform.deepseek.com)",
+          "order": 1
+        },
+        "genext.defaultStyling": {
+          "type": "string",
+          "default": "tailwind",
+          "enum": [
+            "tailwind",
+            "styled-components",
+            "css-modules",
+            "none"
+          ],
+          "description": "Default styling solution for generated components",
+          "order": 2
+        },
+        "genext.autoSave": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically save generated files",
+          "order": 3
+        },
+        "genext.templateStyle": {
+          "type": "string",
+          "default": "arrow-function",
+          "enum": [
+            "arrow-function",
+            "function-declaration"
+          ],
+          "description": "Function style for generated code",
+          "order": 4
+        },
+        "genext.testFramework": {
+          "type": "string",
+          "default": "jest",
+          "enum": [
+            "jest",
+            "vitest"
+          ],
+          "description": "Default testing framework",
+          "order": 5
+        },
+        "genext.azureSubscriptionId": {
+          "type": "string",
+          "default": "",
+          "description": "Azure subscription ID for function deployment",
+          "order": 6
+        },
+        "genext.awsRegion": {
+          "type": "string",
+          "default": "us-east-1",
+          "description": "Default AWS region for Lambda deployments",
+          "order": 7
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/jest": "^29.5.11",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-lambda": "^3.0.0",
+    "@azure/functions": "^4.0.0",
+    "@types/styled-components": "^5.1.34",
+    "axios": "^1.16.1",
+    "fs-extra": "^11.3.5",
+    "vscode": "^1.1.37"
+  }
+}
