@@ -148,6 +148,26 @@
         "command": "genext.openAIChat",
         "title": "💬 GeNext: Open AI Chat",
         "category": "GeNext"
+      },
+      {
+        "command": "genext.generatePrismaSchema",
+        "title": "🗄️ GeNext: Generate Prisma Schema",
+        "category": "GeNext"
+      },
+      {
+        "command": "genext.generateSampleJson",
+        "title": "📄 GeNext: Generate Sample JSON Data",
+        "category": "GeNext"
+      },
+      {
+        "command": "genext.generateNextAuth",
+        "title": "🔐 GeNext: Generate NextAuth Configuration",
+        "category": "GeNext"
+      },
+      {
+        "command": "genext.generateRoutesFromPrisma",
+        "title": "🚀 GeNext: Generate CRUD Routes from Prisma",
+        "category": "GeNext"
       }
     ],
     "menus": {
