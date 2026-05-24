@@ -168,6 +168,16 @@
         "command": "genext.generateRoutesFromPrisma",
         "title": "🚀 GeNext: Generate CRUD Routes from Prisma",
         "category": "GeNext"
+      },
+      {
+        "command": "genext.generateLayout",
+        "title": "📐 GeNext: Generate Layout",
+        "category": "GeNext"
+      },
+      {
+        "command": "genext.generatePage",
+        "title": "📄 GeNext: Generate Page",
+        "category": "GeNext"
       }
     ],
     "menus": {
@@ -262,6 +272,16 @@
         "command": "genext.explainCode",
         "key": "ctrl+shift+e",
         "mac": "cmd+shift+e"
+      },
+      {
+        "command": "genext.generateCheatSheet",
+        "title": "📚 GeNext: Generate Cheat Sheet",
+        "category": "GeNext"
+      },
+      {
+        "command": "genext.generateInterface",
+        "title": "🔧 GeNext: Generate Interface from Data",
+        "category": "GeNext"
       }
     ],
     "configuration": {
